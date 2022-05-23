@@ -31,7 +31,7 @@ class Body extends StatelessWidget {
         _stringIcons(),
         _paddingHeight(40),
         _weatherTextInfo(),
-        SizedBox(height: 100,child: _listWeather())
+        Expanded(child: _listWeather())
       ],
     );
   }
@@ -160,7 +160,7 @@ class Body extends StatelessWidget {
     return  ListView(
       padding: const EdgeInsets.all(8.0),
       scrollDirection: Axis.horizontal,
-      itemExtent: 100,
+      itemExtent: 120,
       children: [
       _listOneElement(day: 'Friday', num: '6'),
       _listOneElement(day: 'Saturday', num: '8'),
